@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tienda de Productos Orgánicos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/Frontend/assets/fonts/sb-bistro/sb-bistro.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/Frontend/assets/fonts/font-awesome/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/bootstrap/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/o2system-ui/o2system-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/owl-carousel/owl-carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/cloudzoom/cloudzoom.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/thumbelina/thumbelina.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/bootstrap-touchspin/bootstrap-touchspin.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/css/theme.css"
+    />
+  </head>
+  <body>
+    <div class="page-header">
+      <!--=============== Barra de Navegación ===============-->
+      <nav
+        class="navbar fixed-top navbar-expand-md navbar-dark bg-transparent"
+        id="page-navigation"
+      >
+        <div class="container">
+          <!-- Marca de la Barra de Navegación -->
+          <a class="navbar-brand">
+            <img src="/Frontend/assets/img/logo/logo.jpeg" alt="Logo" />
+          </a>
+          <!-- Botón de Alternar -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarcollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarcollapse">
+            <!-- Navbar Menu -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="/Frontend/shop/shop.html" class="nav-link">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a href="/Frontend/auth/register.html" class="nav-link"
+                  >Registrarse</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/Frontend/auth/login.html" class="nav-link"
+                  >Iniciar Sesión</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="javascript:void(0)"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <div class="avatar-header">
+                    <img src="/Frontend/assets/img/logo/avatar.jpg" />
+                  </div>
+                  Juan Pérez
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a
+                    class="dropdown-item"
+                    href="/Frontend/admin/transaction.html"
+                    >Historial de Transacciones</a
+                  >
+                  <a class="dropdown-item" href="/Frontend/pages/setting.html"
+                    >Configuraciones</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="javascript:void(0)"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-shopping-basket"></i>
+                  <span class="badge badge-primary">5</span>
+                </a>
+                <div class="dropdown-menu shopping-cart">
+                  <ul>
+                    <li>
+                      <div class="drop-title">Tu Carrito</div>
+                    </li>
+                    <li>
+                      <div class="shopping-cart-list">
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="drop-title d-flex justify-content-between">
+                        <span>Total:</span>
+                        <span class="text-primary"
+                          ><strong>Rp. 2000.000</strong></span
+                        >
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between pl-3 pr-3 pt-3">
+                      <a href="/Frontend/shop/cart.html" class="btn btn-default"
+                        >Ver Carrito</a
+                      >
+                      <a
+                        href="/Frontend/shop/checkout.html"
+                        class="btn btn-primary"
+                        >Pagar</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="page-content" class="page-content">
+      <div class="banner">
+        <div
+          class="jumbotron jumbotron-bg text-center rounded-0"
+          style="background-image: url('/Frontend/assets/img/bg-header.jpg')"
+        >
+          <div class="container">
+            <h1 class="pt-5">Preguntas Frecuentes</h1>
+            <p class="lead">Preguntas Frecuentes.</p>
+          </div>
+        </div>
+      </div>
+
+      <section id="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p><strong>1. ¿Qué es la tienda online?</strong></p>
+              <p>
+                Entrega productos de supermercado desde nuestra bodegas
+                directamente a tu puerta en tan solo una hora. Te permitimos
+                comprar los productos que mas amas y luego aseguramos una
+                entrega segura para ti.
+              </p>
+
+              <p><strong>2. ¿Sirven a mi área?</strong></p>
+              <p>
+                Actualmente servimos el área de Armenia,Quindio , Verifica si
+                entregamos en tu área descargando la aplicación o utilizando
+                nuestro sitio web. Puedes escribir tu dirección y ver la lista
+                de tiendas disponibles. ¡Seguimos agregando tiendas de manera
+                regular! Si tu tienda favorita no está en la lista, puedes
+                sugerirla a través del botón "Solicitar Nuevas Tiendas" al final
+                de la lista de supermercados.
+              </p>
+              <p><strong>3. ¿Qué tan rápido entregan?</strong></p>
+              <p>
+                Te entregamos en la próxima hora, o en cualquier otro intervalo
+                de tiempo de una hora hoy y en los próximos 6 días.
+              </p>
+              <p><strong>4. ¿Cuánto cuesta la entrega?</strong></p>
+              <p>
+                Cuesta COP5000 por la entrega en todos los intervalos de
+                entrega. Y ENTREGA GRATIS para pedidos superiores a COP 100.000
+                solo en el area metropolitana.
+              </p>
+              <p><strong>5. ¿Cuáles son las horas de entrega?</strong></p>
+              <p>
+                Nuestras horas de entrega se basan en el horario de apertura de
+                las tiendas con las que trabajamos. Generalmente entre las 10
+                a.m. y las 10 p.m. Puedes hacer tus pedidos en cualquier momento
+                del día.
+              </p>
+
+              <p>
+                <strong
+                  >6. ¿Qué pasa si alguno de mis artículos está fuera de
+                  stock?</strong
+                >
+              </p>
+              <p>
+                Recibimos actualizaciones de precios y stock a diario de
+                nuestros socios minoristas. Después de realizar tu pedido, se te
+                preguntará qué debería hacer nuestro Comprador Personal en caso
+                de que uno o más de tus artículos estén fuera de stock. Puedes
+                seleccionar para todo el pedido o para cada producto único las
+                siguientes acciones: elegir "dejar que el comprador elija" si
+                quieres que nuestros compradores elijan el reemplazo más
+                adecuado para ti o "llámame" si prefieres recibir una llamada
+                telefónica. Alternativamente, también puedes seleccionar "no
+                reemplazar".
+              </p>
+
+              <p>
+                <strong
+                  >7. ¿Recibiré la bolsa de compras para mi pedido?</strong
+                >
+              </p>
+              <p>
+                Siempre que haya existencias disponibles, nuestro conductor
+                pondrá tu pedido en nuestra propia bolsa de compras
+                reutilizable. Si no recibes la bolsa de compras, podría ser
+                porque las existencias están agotadas. Pero reabasteceremos
+                nuestras bolsas de compras en las tiendas a más tardar en 1
+                semana, no te preocupes.
+              </p>
+              <p>
+                <strong
+                  >8. ¿Pueden asegurar la calidad de los productos que
+                  compré?</strong
+                >
+              </p>
+              <p>
+                ¡Por supuesto! Podemos asegurarte la calidad de los artículos
+                para ti, nuestro querido cliente. Si encuentras algún artículo
+                de mala calidad, puedes contactar a nuestro Servicio al Cliente
+                y lo reemplazaremos.
+              </p>
+              <p>
+                <strong
+                  >9. ¿Cómo puedo verificar el estado de mi pedido?</strong
+                >
+              </p>
+              <p>
+                Recibirás notificaciones cuando tu pedido esté empaquetado,
+                cuando esté en camino y cuando esté a punto de llegar. Recuerda
+                activar las notificaciones push en la configuración de tu
+                teléfono. También puedes ir a la sección "Mis Pedidos" en la
+                aplicación para verificar el estado en tiempo real.
+              </p>
+              <p>
+                <strong>10. ¿Cómo puedo editar o cancelar mi pedido?</strong>
+              </p>
+              <p>
+                Puedes editar tu pedido hasta que el comprador comience a
+                seleccionar tus artículos. Ve a la sección "Mis Pedidos" en la
+                aplicación y selecciona el pedido que deseas editar. Haz clic en
+                "Editar Pedido" para cambiar una de las siguientes:
+              </p>
+              <ul>
+                <li>Agregar o quitar artículos</li>
+                <li>Cambiar intervalo de entrega</li>
+                <li>Cambiar método de pago</li>
+                <li>Cambiar dirección</li>
+                <li>Cancelar pedido</li>
+              </ul>
+
+              <!--2-->
+              <p>
+                <strong>11. ¿Cómo informo un problema con mi pedido?</strong>
+              </p>
+              <p>
+                Puedes contactarnos siguiendo el botón "Ayuda" en la aplicación
+                y seleccionando "Contáctanos". ¡Respondemos muy rápido!
+              </p>
+              <p><strong>12. ¿Cuándo recibiré mi reembolso?</strong></p>
+              <p>
+                El pago se realizará dentro de 14 días mediante un abono a tu
+                tarjeta de crédito.
+              </p>
+              <p><strong>13. ¿Cómo reviso mi recibo?</strong></p>
+              <p>
+                Recibirás un recibo electrónico por correo electrónico después
+                de que se entregue tu pedido.
+              </p>
+
+              <p><strong>14. ¿Cómo devuelvo artículos?</strong></p>
+              <p>
+                Si algo parece estar mal con tu pedido, como un artículo
+                faltante o un artículo incorrecto, puedes rechazar los artículos
+                cuando nuestro repartidor llegue a tu puerta. Solo te cobraremos
+                por los artículos entregados. Una vez que un artículo es
+                aceptado por ti, no se puede devolver. Actualmente no apoyamos
+                un proceso de devolución para ningún artículo que hayas comprado
+                accidentalmente a través de Freshchery. Eres muy bienvenido a
+                coordinar devoluciones directamente con tu tienda. Ten en cuenta
+                que guardamos los recibos de las tiendas para fines contables.
+              </p>
+              <p></p>
+
+              <p><strong>15. ¿Quién seleccionará mis artículos?</strong></p>
+              <p>
+                Todo nuestro Personal y Conductores están altamente capacitados
+                para seleccionar los mejores productos para ti. Empleamos
+                Personal que eligen los productos y Conductores para entregar a
+                tu puerta; en algunas tiendas, podemos depender directamente de
+                los Conductores para entregar tus productos.
+              </p>
+              <p><strong>16. ¿Quién entregará mi pedido?</strong></p>
+              <p>
+                Tus pedidos serán entregados por Conductores especialmente
+                capacitados y seleccionados.
+              </p>
+              <p></p>
+              <p>
+                <strong>17. ¡Tengo muchas más preguntas para ustedes!</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>Enlaces</h5>
+            <ul>
+              <li>
+                <a href="/Frontend/pages/about.html">Acerca de</a>
+              </li>
+              <li>
+                <a href="/Frontend/pages/contact.html">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contacto</h5>
+            <ul>
+              <li>
+                <a href="tel:+620892738334"
+                  ><i class="fa fa-phone"></i> 08272367238</a
+                >
+              </li>
+              <li>
+                <a href="mailto:hello@domain.com"
+                  ><i class="fa fa-envelope"></i> hola@tienda.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        &copy; Tienda de Productos Orgánicos. Todos los derechos reservados.
+      </p>
+    </footer>
+
+    <script type="text/javascript" src="/Frontend/assets/js/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/js/jquery-migrate.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/packages/bootstrap/libraries/popper.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/packages/bootstrap/bootstrap.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/packages/o2system-ui/o2system-ui.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/packages/owl-carousel/owl-carousel.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/packages/cloudzoom/cloudzoom.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/packages/thumbelina/thumbelina.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/Frontend/assets/packages/bootstrap-touchspin/bootstrap-touchspin.js"
+    ></script>
+    <script type="text/javascript" src="/Frontend/assets/js/theme.js"></script>
+  </body>
+</html>

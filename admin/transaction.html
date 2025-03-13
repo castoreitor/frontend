@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tienda Orgánica de Abarrotes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/Frontend/assets/fonts/sb-bistro/sb-bistro.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/Frontend/assets/fonts/font-awesome/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/bootstrap/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/o2system-ui/o2system-ui.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/owl-carousel/owl-carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/cloudzoom/cloudzoom.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/thumbelina/thumbelina.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/packages/bootstrap-touchspin/bootstrap-touchspin.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="/Frontend/assets/css/theme.css"
+    />
+  </head>
+  <body>
+    <div class="page-header">
+      <!--=============== Navbar ===============-->
+      <nav
+        class="navbar fixed-top navbar-expand-md navbar-dark bg-transparent"
+        id="page-navigation"
+      >
+        <div class="container">
+          <!-- Navbar Brand -->
+          <a class="navbar-brand">
+            <img src="/Frontend/assets/img/logo/logo.jpeg" alt="Logo" />
+          </a>
+
+          <!-- Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarcollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarcollapse">
+            <!-- Navbar Menu -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="/Frontend/shop/shop.html" class="nav-link">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a href="/Frontend/auth/register.html" class="nav-link">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a href="/Frontend/auth/login.html" class="nav-link">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="javascript:void(0)"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <div class="avatar-header">
+                    <img src="/Frontend/assets/img/logo/avatar.jpg" />
+                  </div>
+                  Juan Pérez
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="transaction.html"
+                    >Historial de Transacciones</a
+                  >
+                  <a class="dropdown-item" href="/Frontend/pages/setting.html"
+                    >Configuraciones</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="javascript:void(0)"
+                  class="nav-link dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-shopping-basket"></i>
+                  <span class="badge badge-primary">5</span>
+                </a>
+                <div class="dropdown-menu shopping-cart">
+                  <ul>
+                    <li>
+                      <div class="drop-title">Tu Carrito</div>
+                    </li>
+                    <li>
+                      <div class="shopping-cart-list">
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                        <div class="media">
+                          <img
+                            class="d-flex mr-3"
+                            src="/Frontend/assets/img/logo/avatar.jpg"
+                            width="60"
+                          />
+                          <div class="media-body">
+                            <h5><a href="javascript:void(0)">Zanahoria</a></h5>
+                            <p class="price">
+                              <span class="discount text-muted"
+                                >Rp. 700.000</span
+                              >
+                              <span>Rp. 100.000</span>
+                            </p>
+                            <p class="text-muted">Cantidad: 1</p>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="drop-title d-flex justify-content-between">
+                        <span>Total:</span>
+                        <span class="text-primary"
+                          ><strong>Rp. 2000.000</strong></span
+                        >
+                      </div>
+                    </li>
+                    <li class="d-flex justify-content-between pl-3 pr-3 pt-3">
+                      <a href="/Frontend/shop/cart.html" class="btn btn-default"
+                        >Ver Carrito</a
+                      >
+                      <a href="/Frontend/shop/checkout.html" class="btn btn-primary">Pagar</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="page-content" class="page-content">
+      <div class="banner">
+        <div
+          class="jumbotron jumbotron-bg text-center rounded-0"
+          style="background-image: url('/Frontend/assets/img/bg-header.jpg')"
+        >
+          <div class="container">
+            <h1 class="pt-5">Tus Transacciones</h1>
+            <p class="lead">
+              Ahorra tiempo y déjanos a nosotros los abarrotes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--1-->
+
+      <section id="cart">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th width="5%"></th>
+                      <th>Factura</th>
+                      <th>Fecha</th>
+                      <th>Total</th>
+                      <th>Estado</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>AL121N8H2XQB47</td>
+                      <td>12-12-2017</td>
+                      <td>Rp 200.000</td>
+                      <td>Entregado</td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn btn-default btn-sm"
+                          data-toggle="modal"
+                          data-target="#detailModal"
+                        >
+                          Detalle
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+      
+              <nav aria-label="Navegación de página">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#">Anterior</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="detailModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                No. de Pedido: AL121N8H2XQB47
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Cerrar"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                    <strong>Detalles de Facturación:</strong><br />
+                    Teguh Rianto<br />
+                    Jl. Petani No. 159, Cibabat<br />
+                    Cimahi Utara<br />
+                    Kota Cimahi<br />
+                    Jawa Barat 40513
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    <strong>Método de Pago:</strong><br />
+                    Transferencia Directa a<br />
+                    Banco: BCA<br />
+                    No de Cuenta: 72133236179
+                  </p>
+                  <p>
+                    <strong>Fecha Límite de Pago</strong><br />
+                    14-12-2017 17:55 GMT+7
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p>
+                    <strong>Tu Pedido:</strong>
+                  </p>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Productos</th>
+                          <th class="text-right">Subtotal</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Pescado Fresco x1</td>
+                          <td class="text-right">Rp 30.000</td>
+                        </tr>
+                        <tr>
+                          <td>Sirloin x1</td>
+                          <td class="text-right">Rp 120.000</td>
+                        </tr>
+                        <tr>
+                          <td>Verduras Mixtas x1</td>
+                          <td class="text-right">Rp 30.000</td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td>
+                            <strong>Subtotal del Carrito</strong>
+                          </td>
+                          <td class="text-right">Rp 180.000</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>Envío</strong>
+                          </td>
+                          <td class="text-right">Rp 20.000</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>TOTAL DEL PEDIDO</strong>
+                          </td>
+                          <td class="text-right">
+                            <strong>Rp 200.000</strong>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h5>Enlaces</h5>
+              <ul>
+                <li>
+                  <a href="/Frontend/pages/about.html">Acerca de</a>
+                </li>
+                <li>
+                  <a href="/Frontend/pages/contact.html">Contáctanos</a>
+                </li>
+                <li>
+                  <a href="/Frontend/pages/faq.html">Preguntas Frecuentes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+      
+              <h5>Contacto</h5>
+              <ul>
+                <li>
+                  <a href="tel:+620892738334"
+                    ><i class="fa fa-phone"></i> 08272367238</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:hola@tienda.com"
+                    ><i class="fa fa-envelope"></i> hola@tienda.com</a
+                  >
+                </li>
+              </ul>
+              </div>
+              </div>
+              </div>
+              <p class="copyright">
+                &copy; Tienda de Productos Orgánicos. Todos los derechos reservados.
+              </p>
+              </footer>
+              
+              <script type="text/javascript" src="/Frontend/assets/js/jquery.js"></script>
+              <script type="text/javascript" src="/Frontend/assets/js/jquery-migrate.js"></script>
+              <script
+                type="text/javascript"
+                src="/Frontend/assets/packages/bootstrap/libraries/popper.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="/Frontend/assets/packages/bootstrap/bootstrap.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="/Frontend/assets/packages/o2system-ui/o2system-ui.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="/Frontend/assets/packages/owl-carousel/owl-carousel.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="/Frontend/assets/packages/cloudzoom/cloudzoom.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="/Frontend/assets/packages/thumbelina/thumbelina.js"
+              ></script>
+              <script
+                type="text/javascript"
+                src="/Frontend/assets/packages/bootstrap-touchspin/bootstrap-touchspin.js"
+              ></script>
+              <script type="text/javascript" src="/Frontend/assets/js/theme.js"></script>
+              </body>
+              </html>
+              

@@ -1,4 +1,4 @@
-let url = "https://minimarketarmenia.netlify.app";
+let url = "http://localhost:4077/";
 
 // Simula la verificación de inicio de sesión
 function isLoggedIn() {

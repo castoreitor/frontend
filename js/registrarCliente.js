@@ -1,4 +1,4 @@
-let url = "https://minimarketarmenia.netlify.app";
+let url = "http://localhost:4077/";
 
 // Función para validar el nombre y apellido
 const validarNombreApellido = (nombre) => {

@@ -1,4 +1,4 @@
-let url = "http://localhost:4077/";
+let url = "backend.railway.internal:4077/";
 
 // Simula la verificación de inicio de sesión
 function isLoggedIn() {

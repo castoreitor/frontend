@@ -1,4 +1,4 @@
-let url = "http://localhost:4077/";
+let url = "https://minimarketarmenia.netlify.app";
 
 function logout() {
   return localStorage.getItem("userLoggedIn") === "false";

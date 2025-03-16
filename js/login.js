@@ -1,4 +1,4 @@
-let url = "http://localhost:4077/";
+let url = "https://minimarketarmenia.netlify.app";
 
 // Envia los datos para permitir acceso
 const comprobar = () => {

@@ -1,4 +1,4 @@
-let url = "http://localhost:4077/";
+let url = "https://minimarketarmenia.netlify.app";
 
 // Función para mostrar datos en la tabla
 const mostrarData = (data) => {

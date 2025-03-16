@@ -1,4 +1,4 @@
-let url = "backend.railway.internal:4077/";
+let url = "backend-production-4ed3.up.railway.app";
 
 function logout() {
   return localStorage.getItem("userLoggedIn") === "false";

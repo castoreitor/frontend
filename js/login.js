@@ -1,4 +1,4 @@
-let url = "backend.railway.internal:4077/";
+let url = "backend-production-4ed3.up.railway.app";
 
 // Envia los datos para permitir acceso
 const comprobar = () => {
